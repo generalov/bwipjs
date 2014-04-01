@@ -62,15 +62,16 @@
 //
 var fs  = require('fs');
 var vm  = require('vm');
+var path  = require('path');
 
 
-function load(path) {
-    var text = fs.readFileSync(path);
+function load(filename) {
+    var text = fs.readFileSync(path.join(__dirname, filename));
     if (!text)
-        throw new Error(path + ": could not read file");
+        throw new Error(filename + ": could not read file");
 
-    console.log('loading: ' + path);
-    vm.runInThisContext(text, path);
+    console.log('loading: ' + filename);
+    vm.runInThisContext(text, filename);
 }
 
 function error(message) {
@@ -99,7 +100,7 @@ module.exports = function(args) {
         return error('Bar code text not specified.\r\n');
     if (!bcid)
         return error('Bar code type not specified.\r\n');
-    if (!fs.existsSync('bwipp/' + bcid + '.js'))
+    if (!fs.existsSync(path.join(__dirname, 'bwipp/' + bcid + '.js')))
         return error('Bar code type "' + bcid + '" unknown.\r\n');
 
     // Remove the non-BWIPP options
