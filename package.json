@@ -1,0 +1,28 @@
+{
+  "name": "bwipjs",
+  "version": "0.5.1",
+  "description": "Barcode Writer in Pure JavaScript",
+  "main": "bwip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattvoss/bwipjs.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Barcode",
+    "Generator",
+    "CrossBrowser",
+    "ServerSide",
+    "CommonJS",
+    "Node.js"
+  ],
+  "author": "Mark Warren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattvoss/bwipjs/issues"
+  },
+  "homepage": "https://github.com/mattvoss/bwipjs"
+}
