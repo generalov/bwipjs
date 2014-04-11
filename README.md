@@ -7,5 +7,8 @@ Run server:
 
 or
 
-    node ./app.js
+    npm_package_config_port=9000 node ./app.js
+
+
+Default port is 8086
 
