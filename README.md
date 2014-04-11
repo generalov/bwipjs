@@ -12,3 +12,6 @@ or
 
 Default port is 8086
 
+Example:
+
+    http://localhost:8086/isbn/?isbn=987-1-234-56789
