@@ -1,5 +1,5 @@
 {
-  "name": "bwipjs",
+  "name": "bwipjs-isbn",
   "version": "0.5.1",
   "description": "Barcode Writer in Pure JavaScript",
   "main": "index.js",
