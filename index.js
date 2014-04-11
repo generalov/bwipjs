@@ -7,7 +7,7 @@ var ZEROGIF_BASE64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
 module.exports.isbnPNG = function isbnPNG(req, res) {
     var queryObject = url.parse(req.url, true).query;
-    var isbn = queryObject.text;
+    var isbn = queryObject.isbn;
     var args = {
         bcid: 'isbn',
         text: isbn,
