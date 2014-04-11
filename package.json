@@ -1,11 +1,16 @@
 {
   "name": "bwipjs-isbn",
   "version": "0.5.1",
-  "description": "Barcode Writer in Pure JavaScript",
-  "main": "index.js",
+  "description": "ISBN barcode writer in Pure JavaScript",
+  "private": true,
+  "config": {
+    "port": "8046"
+  },
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mattvoss/bwipjs.git"
@@ -24,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/mattvoss/bwipjs/issues"
   },
-  "homepage": "https://github.com/mattvoss/bwipjs"
+  "homepage": "https://github.com/mattvoss/bwipjs",
+  "dependencies": {
+    "connect": "^2.14.4"
+  }
 }
