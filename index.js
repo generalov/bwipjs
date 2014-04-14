@@ -8,12 +8,12 @@ var ZEROGIF_BASE64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
 module.exports.isbnPNG = function isbnPNG(req, res) {
     var queryObject = url.parse(req.url, true).query;
-    var isbnStr = queryObject.isbn;
+    var isbnCode = (queryObject.isbn || '').split(/\s+/);
     try {
-        isbnStr = isbn.hyphenate(isbnStr);  
+        isbnCode[0] = isbn.hyphenate(isbnCode[0]);
         var args = {
             bcid: 'isbn',
-            text: isbnStr,
+            text: isbnCode.join(' '),
             includetext: true,
             guardwhitespace: true
         }, png;
