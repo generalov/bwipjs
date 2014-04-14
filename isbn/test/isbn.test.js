@@ -1,7 +1,6 @@
 /* jshint node:true */
 'use strict';
 
-var _ = require('lodash');
 var expect = require('chai').expect;
 var isbn = require('../index.js');
 

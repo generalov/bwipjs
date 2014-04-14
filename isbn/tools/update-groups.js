@@ -1,7 +1,6 @@
 /* jshint node:true */
 'use strict';
 
-var _ = require('lodash');
 var http = require('http');
 var Promise = require('bluebird');
 var xmldoc = require('xmldoc');

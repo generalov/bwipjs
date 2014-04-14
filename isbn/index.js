@@ -1,7 +1,6 @@
 /* jshint node:true */
 'use strict';
 
-var _ = require('lodash');
 var ISBNGroups = require('./isbn-groups.json');
 
 var hyphenate = function hyphenate(ISBNString) {
