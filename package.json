@@ -1,6 +1,6 @@
 {
   "name": "bwipjs-isbn",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "ISBN barcode writer in Pure JavaScript",
   "private": true,
   "config": {
